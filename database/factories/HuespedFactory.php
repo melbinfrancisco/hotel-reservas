@@ -28,7 +28,7 @@ class HuespedFactory extends Factory
             'nombre' => fake()->firstName(),
             'apellido' => fake()->lastName(),
             'correo_electronico' => fake()->unique()->safeEmail(),
-            'telefono' => fake()->unique()->numerify('####-####'),
+            'telefono' => fake()->unique()->numerify('########'),
         ];
     }
 }

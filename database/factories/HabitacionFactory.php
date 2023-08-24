@@ -25,8 +25,8 @@ class HabitacionFactory extends Factory
     {
         return [
             'numero' => fake()->unique()->numberBetween(100, 1000),
-            'tipo' => fake()->randomElement(['individual', 'doble', 'suite', 'triple', 'quad', 'twin']),
-            'precio' => fake()->randomFloat(2, 50, 500)
+            'tipo' => fake()->randomElement(['Individual', 'Doble', 'Suite', 'Triple', 'Quad', 'Twin']),
+            'precio' => fake()->randomFloat(2, 500, 1500)
         ];
     }
 }
